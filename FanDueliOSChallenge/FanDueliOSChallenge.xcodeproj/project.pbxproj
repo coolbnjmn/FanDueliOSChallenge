@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B205493D1CE57162000ADBAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205493C1CE57162000ADBAA /* AppDelegate.swift */; };
+		B205493F1CE57162000ADBAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205493E1CE57162000ADBAA /* ViewController.swift */; };
+		B20549421CE57162000ADBAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20549401CE57162000ADBAA /* Main.storyboard */; };
+		B20549441CE57162000ADBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20549431CE57162000ADBAA /* Assets.xcassets */; };
+		B20549471CE57162000ADBAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20549451CE57162000ADBAA /* LaunchScreen.storyboard */; };
+		B20549521CE57162000ADBAA /* FanDueliOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */; };
+		B205495D1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B205494E1CE57162000ADBAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20549311CE57162000ADBAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20549381CE57162000ADBAA;
+			remoteInfo = FanDueliOSChallenge;
+		};
+		B20549591CE57162000ADBAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20549311CE57162000ADBAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20549381CE57162000ADBAA;
+			remoteInfo = FanDueliOSChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20549391CE57162000ADBAA /* FanDueliOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanDueliOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B205493C1CE57162000ADBAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B205493E1CE57162000ADBAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B20549411CE57162000ADBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20549431CE57162000ADBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20549461CE57162000ADBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B20549481CE57162000ADBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B205494D1CE57162000ADBAA /* FanDueliOSChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanDueliOSChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanDueliOSChallengeTests.swift; sourceTree = "<group>"; };
+		B20549531CE57162000ADBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20549581CE57162000ADBAA /* FanDueliOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanDueliOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanDueliOSChallengeUITests.swift; sourceTree = "<group>"; };
+		B205495E1CE57162000ADBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20549361CE57162000ADBAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B205494A1CE57162000ADBAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20549551CE57162000ADBAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20549301CE57162000ADBAA = {
+			isa = PBXGroup;
+			children = (
+				B205493B1CE57162000ADBAA /* FanDueliOSChallenge */,
+				B20549501CE57162000ADBAA /* FanDueliOSChallengeTests */,
+				B205495B1CE57162000ADBAA /* FanDueliOSChallengeUITests */,
+				B205493A1CE57162000ADBAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B205493A1CE57162000ADBAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20549391CE57162000ADBAA /* FanDueliOSChallenge.app */,
+				B205494D1CE57162000ADBAA /* FanDueliOSChallengeTests.xctest */,
+				B20549581CE57162000ADBAA /* FanDueliOSChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B205493B1CE57162000ADBAA /* FanDueliOSChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				B205493C1CE57162000ADBAA /* AppDelegate.swift */,
+				B205493E1CE57162000ADBAA /* ViewController.swift */,
+				B20549401CE57162000ADBAA /* Main.storyboard */,
+				B20549431CE57162000ADBAA /* Assets.xcassets */,
+				B20549451CE57162000ADBAA /* LaunchScreen.storyboard */,
+				B20549481CE57162000ADBAA /* Info.plist */,
+			);
+			path = FanDueliOSChallenge;
+			sourceTree = "<group>";
+		};
+		B20549501CE57162000ADBAA /* FanDueliOSChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */,
+				B20549531CE57162000ADBAA /* Info.plist */,
+			);
+			path = FanDueliOSChallengeTests;
+			sourceTree = "<group>";
+		};
+		B205495B1CE57162000ADBAA /* FanDueliOSChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */,
+				B205495E1CE57162000ADBAA /* Info.plist */,
+			);
+			path = FanDueliOSChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20549381CE57162000ADBAA /* FanDueliOSChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20549611CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallenge" */;
+			buildPhases = (
+				B20549351CE57162000ADBAA /* Sources */,
+				B20549361CE57162000ADBAA /* Frameworks */,
+				B20549371CE57162000ADBAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FanDueliOSChallenge;
+			productName = FanDueliOSChallenge;
+			productReference = B20549391CE57162000ADBAA /* FanDueliOSChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B205494C1CE57162000ADBAA /* FanDueliOSChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20549641CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeTests" */;
+			buildPhases = (
+				B20549491CE57162000ADBAA /* Sources */,
+				B205494A1CE57162000ADBAA /* Frameworks */,
+				B205494B1CE57162000ADBAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B205494F1CE57162000ADBAA /* PBXTargetDependency */,
+			);
+			name = FanDueliOSChallengeTests;
+			productName = FanDueliOSChallengeTests;
+			productReference = B205494D1CE57162000ADBAA /* FanDueliOSChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B20549571CE57162000ADBAA /* FanDueliOSChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20549671CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeUITests" */;
+			buildPhases = (
+				B20549541CE57162000ADBAA /* Sources */,
+				B20549551CE57162000ADBAA /* Frameworks */,
+				B20549561CE57162000ADBAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B205495A1CE57162000ADBAA /* PBXTargetDependency */,
+			);
+			name = FanDueliOSChallengeUITests;
+			productName = FanDueliOSChallengeUITests;
+			productReference = B20549581CE57162000ADBAA /* FanDueliOSChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20549311CE57162000ADBAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = coolbnjmn;
+				TargetAttributes = {
+					B20549381CE57162000ADBAA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B205494C1CE57162000ADBAA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B20549381CE57162000ADBAA;
+					};
+					B20549571CE57162000ADBAA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B20549381CE57162000ADBAA;
+					};
+				};
+			};
+			buildConfigurationList = B20549341CE57162000ADBAA /* Build configuration list for PBXProject "FanDueliOSChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20549301CE57162000ADBAA;
+			productRefGroup = B205493A1CE57162000ADBAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20549381CE57162000ADBAA /* FanDueliOSChallenge */,
+				B205494C1CE57162000ADBAA /* FanDueliOSChallengeTests */,
+				B20549571CE57162000ADBAA /* FanDueliOSChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20549371CE57162000ADBAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20549471CE57162000ADBAA /* LaunchScreen.storyboard in Resources */,
+				B20549441CE57162000ADBAA /* Assets.xcassets in Resources */,
+				B20549421CE57162000ADBAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B205494B1CE57162000ADBAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20549561CE57162000ADBAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20549351CE57162000ADBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B205493F1CE57162000ADBAA /* ViewController.swift in Sources */,
+				B205493D1CE57162000ADBAA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20549491CE57162000ADBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20549521CE57162000ADBAA /* FanDueliOSChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20549541CE57162000ADBAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B205495D1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B205494F1CE57162000ADBAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20549381CE57162000ADBAA /* FanDueliOSChallenge */;
+			targetProxy = B205494E1CE57162000ADBAA /* PBXContainerItemProxy */;
+		};
+		B205495A1CE57162000ADBAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20549381CE57162000ADBAA /* FanDueliOSChallenge */;
+			targetProxy = B20549591CE57162000ADBAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20549401CE57162000ADBAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20549411CE57162000ADBAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B20549451CE57162000ADBAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20549461CE57162000ADBAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B205495F1CE57162000ADBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B20549601CE57162000ADBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20549621CE57162000ADBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FanDueliOSChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B20549631CE57162000ADBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FanDueliOSChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B20549651CE57162000ADBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FanDueliOSChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanDueliOSChallenge.app/FanDueliOSChallenge";
+			};
+			name = Debug;
+		};
+		B20549661CE57162000ADBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FanDueliOSChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanDueliOSChallenge.app/FanDueliOSChallenge";
+			};
+			name = Release;
+		};
+		B20549681CE57162000ADBAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FanDueliOSChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FanDueliOSChallenge;
+			};
+			name = Debug;
+		};
+		B20549691CE57162000ADBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FanDueliOSChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FanDueliOSChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20549341CE57162000ADBAA /* Build configuration list for PBXProject "FanDueliOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B205495F1CE57162000ADBAA /* Debug */,
+				B20549601CE57162000ADBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20549611CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20549621CE57162000ADBAA /* Debug */,
+				B20549631CE57162000ADBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B20549641CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20549651CE57162000ADBAA /* Debug */,
+				B20549661CE57162000ADBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B20549671CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20549681CE57162000ADBAA /* Debug */,
+				B20549691CE57162000ADBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20549311CE57162000ADBAA /* Project object */;
+}
