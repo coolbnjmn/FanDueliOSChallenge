@@ -1,505 +1,1117 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		B205493D1CE57162000ADBAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205493C1CE57162000ADBAA /* AppDelegate.swift */; };
-		B205493F1CE57162000ADBAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205493E1CE57162000ADBAA /* ViewController.swift */; };
-		B20549421CE57162000ADBAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20549401CE57162000ADBAA /* Main.storyboard */; };
-		B20549441CE57162000ADBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20549431CE57162000ADBAA /* Assets.xcassets */; };
-		B20549471CE57162000ADBAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20549451CE57162000ADBAA /* LaunchScreen.storyboard */; };
-		B20549521CE57162000ADBAA /* FanDueliOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */; };
-		B205495D1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B205494E1CE57162000ADBAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B20549311CE57162000ADBAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B20549381CE57162000ADBAA;
-			remoteInfo = FanDueliOSChallenge;
-		};
-		B20549591CE57162000ADBAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B20549311CE57162000ADBAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B20549381CE57162000ADBAA;
-			remoteInfo = FanDueliOSChallenge;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		B20549391CE57162000ADBAA /* FanDueliOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanDueliOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B205493C1CE57162000ADBAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B205493E1CE57162000ADBAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B20549411CE57162000ADBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B20549431CE57162000ADBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B20549461CE57162000ADBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B20549481CE57162000ADBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B205494D1CE57162000ADBAA /* FanDueliOSChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanDueliOSChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanDueliOSChallengeTests.swift; sourceTree = "<group>"; };
-		B20549531CE57162000ADBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B20549581CE57162000ADBAA /* FanDueliOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanDueliOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanDueliOSChallengeUITests.swift; sourceTree = "<group>"; };
-		B205495E1CE57162000ADBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		B20549361CE57162000ADBAA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B205494A1CE57162000ADBAA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B20549551CE57162000ADBAA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		B20549301CE57162000ADBAA = {
-			isa = PBXGroup;
-			children = (
-				B205493B1CE57162000ADBAA /* FanDueliOSChallenge */,
-				B20549501CE57162000ADBAA /* FanDueliOSChallengeTests */,
-				B205495B1CE57162000ADBAA /* FanDueliOSChallengeUITests */,
-				B205493A1CE57162000ADBAA /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		B205493A1CE57162000ADBAA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B20549391CE57162000ADBAA /* FanDueliOSChallenge.app */,
-				B205494D1CE57162000ADBAA /* FanDueliOSChallengeTests.xctest */,
-				B20549581CE57162000ADBAA /* FanDueliOSChallengeUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B205493B1CE57162000ADBAA /* FanDueliOSChallenge */ = {
-			isa = PBXGroup;
-			children = (
-				B205493C1CE57162000ADBAA /* AppDelegate.swift */,
-				B205493E1CE57162000ADBAA /* ViewController.swift */,
-				B20549401CE57162000ADBAA /* Main.storyboard */,
-				B20549431CE57162000ADBAA /* Assets.xcassets */,
-				B20549451CE57162000ADBAA /* LaunchScreen.storyboard */,
-				B20549481CE57162000ADBAA /* Info.plist */,
-			);
-			path = FanDueliOSChallenge;
-			sourceTree = "<group>";
-		};
-		B20549501CE57162000ADBAA /* FanDueliOSChallengeTests */ = {
-			isa = PBXGroup;
-			children = (
-				B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */,
-				B20549531CE57162000ADBAA /* Info.plist */,
-			);
-			path = FanDueliOSChallengeTests;
-			sourceTree = "<group>";
-		};
-		B205495B1CE57162000ADBAA /* FanDueliOSChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */,
-				B205495E1CE57162000ADBAA /* Info.plist */,
-			);
-			path = FanDueliOSChallengeUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		B20549381CE57162000ADBAA /* FanDueliOSChallenge */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B20549611CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallenge" */;
-			buildPhases = (
-				B20549351CE57162000ADBAA /* Sources */,
-				B20549361CE57162000ADBAA /* Frameworks */,
-				B20549371CE57162000ADBAA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FanDueliOSChallenge;
-			productName = FanDueliOSChallenge;
-			productReference = B20549391CE57162000ADBAA /* FanDueliOSChallenge.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B205494C1CE57162000ADBAA /* FanDueliOSChallengeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B20549641CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeTests" */;
-			buildPhases = (
-				B20549491CE57162000ADBAA /* Sources */,
-				B205494A1CE57162000ADBAA /* Frameworks */,
-				B205494B1CE57162000ADBAA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B205494F1CE57162000ADBAA /* PBXTargetDependency */,
-			);
-			name = FanDueliOSChallengeTests;
-			productName = FanDueliOSChallengeTests;
-			productReference = B205494D1CE57162000ADBAA /* FanDueliOSChallengeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B20549571CE57162000ADBAA /* FanDueliOSChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B20549671CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeUITests" */;
-			buildPhases = (
-				B20549541CE57162000ADBAA /* Sources */,
-				B20549551CE57162000ADBAA /* Frameworks */,
-				B20549561CE57162000ADBAA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B205495A1CE57162000ADBAA /* PBXTargetDependency */,
-			);
-			name = FanDueliOSChallengeUITests;
-			productName = FanDueliOSChallengeUITests;
-			productReference = B20549581CE57162000ADBAA /* FanDueliOSChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		B20549311CE57162000ADBAA /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = coolbnjmn;
-				TargetAttributes = {
-					B20549381CE57162000ADBAA = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					B205494C1CE57162000ADBAA = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = B20549381CE57162000ADBAA;
-					};
-					B20549571CE57162000ADBAA = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = B20549381CE57162000ADBAA;
-					};
-				};
-			};
-			buildConfigurationList = B20549341CE57162000ADBAA /* Build configuration list for PBXProject "FanDueliOSChallenge" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = B20549301CE57162000ADBAA;
-			productRefGroup = B205493A1CE57162000ADBAA /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B20549381CE57162000ADBAA /* FanDueliOSChallenge */,
-				B205494C1CE57162000ADBAA /* FanDueliOSChallengeTests */,
-				B20549571CE57162000ADBAA /* FanDueliOSChallengeUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B20549371CE57162000ADBAA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B20549471CE57162000ADBAA /* LaunchScreen.storyboard in Resources */,
-				B20549441CE57162000ADBAA /* Assets.xcassets in Resources */,
-				B20549421CE57162000ADBAA /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B205494B1CE57162000ADBAA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B20549561CE57162000ADBAA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		B20549351CE57162000ADBAA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B205493F1CE57162000ADBAA /* ViewController.swift in Sources */,
-				B205493D1CE57162000ADBAA /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B20549491CE57162000ADBAA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B20549521CE57162000ADBAA /* FanDueliOSChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B20549541CE57162000ADBAA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B205495D1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B205494F1CE57162000ADBAA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B20549381CE57162000ADBAA /* FanDueliOSChallenge */;
-			targetProxy = B205494E1CE57162000ADBAA /* PBXContainerItemProxy */;
-		};
-		B205495A1CE57162000ADBAA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B20549381CE57162000ADBAA /* FanDueliOSChallenge */;
-			targetProxy = B20549591CE57162000ADBAA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B20549401CE57162000ADBAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B20549411CE57162000ADBAA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B20549451CE57162000ADBAA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B20549461CE57162000ADBAA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		B205495F1CE57162000ADBAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		B20549601CE57162000ADBAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B20549621CE57162000ADBAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FanDueliOSChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallenge;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B20549631CE57162000ADBAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FanDueliOSChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallenge;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B20549651CE57162000ADBAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FanDueliOSChallengeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanDueliOSChallenge.app/FanDueliOSChallenge";
-			};
-			name = Debug;
-		};
-		B20549661CE57162000ADBAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FanDueliOSChallengeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanDueliOSChallenge.app/FanDueliOSChallenge";
-			};
-			name = Release;
-		};
-		B20549681CE57162000ADBAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FanDueliOSChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FanDueliOSChallenge;
-			};
-			name = Debug;
-		};
-		B20549691CE57162000ADBAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FanDueliOSChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = coolbnjmn.FanDueliOSChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FanDueliOSChallenge;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		B20549341CE57162000ADBAA /* Build configuration list for PBXProject "FanDueliOSChallenge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B205495F1CE57162000ADBAA /* Debug */,
-				B20549601CE57162000ADBAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B20549611CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallenge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B20549621CE57162000ADBAA /* Debug */,
-				B20549631CE57162000ADBAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B20549641CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B20549651CE57162000ADBAA /* Debug */,
-				B20549661CE57162000ADBAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B20549671CE57162000ADBAA /* Build configuration list for PBXNativeTarget "FanDueliOSChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B20549681CE57162000ADBAA /* Debug */,
-				B20549691CE57162000ADBAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = B20549311CE57162000ADBAA /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1D30D5D1B43A2B24E83A0C87</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FanDueliOSChallenge.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FanDueliOSChallenge/Pods-FanDueliOSChallenge.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>455C7A6F94F5892DF45D3DC7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FanDueliOSChallenge.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FanDueliOSChallenge/Pods-FanDueliOSChallenge.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5BE57C6A7CFCC069E8BB4593</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FanDueliOSChallenge/Pods-FanDueliOSChallenge-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>718A575FC4587ABB04122EF6</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_FanDueliOSChallenge.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7FC6FBC29D08838942FCAD7F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FanDueliOSChallenge/Pods-FanDueliOSChallenge-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>8BC2AE0463F6993B66428898</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B20549301CE57162000ADBAA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B205493B1CE57162000ADBAA</string>
+				<string>B20549501CE57162000ADBAA</string>
+				<string>B205495B1CE57162000ADBAA</string>
+				<string>B205493A1CE57162000ADBAA</string>
+				<string>FA333D305DDA759799C72E06</string>
+				<string>F78BBAEFDD40D1DFD59F04BC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549311CE57162000ADBAA</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>coolbnjmn</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>B20549381CE57162000ADBAA</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+					</dict>
+					<key>B205494C1CE57162000ADBAA</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>B20549381CE57162000ADBAA</string>
+					</dict>
+					<key>B20549571CE57162000ADBAA</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>B20549381CE57162000ADBAA</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>B20549341CE57162000ADBAA</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>B20549301CE57162000ADBAA</string>
+			<key>productRefGroup</key>
+			<string>B205493A1CE57162000ADBAA</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B20549381CE57162000ADBAA</string>
+				<string>B205494C1CE57162000ADBAA</string>
+				<string>B20549571CE57162000ADBAA</string>
+			</array>
+		</dict>
+		<key>B20549341CE57162000ADBAA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B205495F1CE57162000ADBAA</string>
+				<string>B20549601CE57162000ADBAA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B20549351CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B205493F1CE57162000ADBAA</string>
+				<string>B205493D1CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B20549361CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CDF36862E8DE3777EDB6DB04</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B20549371CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B20549471CE57162000ADBAA</string>
+				<string>B20549441CE57162000ADBAA</string>
+				<string>B20549421CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B20549381CE57162000ADBAA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B20549611CE57162000ADBAA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8BC2AE0463F6993B66428898</string>
+				<string>B20549351CE57162000ADBAA</string>
+				<string>B20549361CE57162000ADBAA</string>
+				<string>B20549371CE57162000ADBAA</string>
+				<string>7FC6FBC29D08838942FCAD7F</string>
+				<string>5BE57C6A7CFCC069E8BB4593</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FanDueliOSChallenge</string>
+			<key>productName</key>
+			<string>FanDueliOSChallenge</string>
+			<key>productReference</key>
+			<string>B20549391CE57162000ADBAA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>B20549391CE57162000ADBAA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FanDueliOSChallenge.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B205493A1CE57162000ADBAA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B20549391CE57162000ADBAA</string>
+				<string>B205494D1CE57162000ADBAA</string>
+				<string>B20549581CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B205493B1CE57162000ADBAA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B205493C1CE57162000ADBAA</string>
+				<string>B205493E1CE57162000ADBAA</string>
+				<string>B20549401CE57162000ADBAA</string>
+				<string>B20549431CE57162000ADBAA</string>
+				<string>B20549451CE57162000ADBAA</string>
+				<string>B20549481CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FanDueliOSChallenge</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B205493C1CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B205493D1CE57162000ADBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B205493C1CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B205493E1CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B205493F1CE57162000ADBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B205493E1CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B20549401CE57162000ADBAA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B20549411CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549411CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549421CE57162000ADBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B20549401CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B20549431CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549441CE57162000ADBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B20549431CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B20549451CE57162000ADBAA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B20549461CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549461CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549471CE57162000ADBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B20549451CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B20549481CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549491CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B20549521CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B205494A1CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B205494B1CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B205494C1CE57162000ADBAA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B20549641CE57162000ADBAA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B20549491CE57162000ADBAA</string>
+				<string>B205494A1CE57162000ADBAA</string>
+				<string>B205494B1CE57162000ADBAA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B205494F1CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FanDueliOSChallengeTests</string>
+			<key>productName</key>
+			<string>FanDueliOSChallengeTests</string>
+			<key>productReference</key>
+			<string>B205494D1CE57162000ADBAA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>B205494D1CE57162000ADBAA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FanDueliOSChallengeTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B205494E1CE57162000ADBAA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B20549311CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B20549381CE57162000ADBAA</string>
+			<key>remoteInfo</key>
+			<string>FanDueliOSChallenge</string>
+		</dict>
+		<key>B205494F1CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>B20549381CE57162000ADBAA</string>
+			<key>targetProxy</key>
+			<string>B205494E1CE57162000ADBAA</string>
+		</dict>
+		<key>B20549501CE57162000ADBAA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B20549511CE57162000ADBAA</string>
+				<string>B20549531CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FanDueliOSChallengeTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549511CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FanDueliOSChallengeTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549521CE57162000ADBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B20549511CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B20549531CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B20549541CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B205495D1CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B20549551CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B20549561CE57162000ADBAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B20549571CE57162000ADBAA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B20549671CE57162000ADBAA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B20549541CE57162000ADBAA</string>
+				<string>B20549551CE57162000ADBAA</string>
+				<string>B20549561CE57162000ADBAA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B205495A1CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FanDueliOSChallengeUITests</string>
+			<key>productName</key>
+			<string>FanDueliOSChallengeUITests</string>
+			<key>productReference</key>
+			<string>B20549581CE57162000ADBAA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>B20549581CE57162000ADBAA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FanDueliOSChallengeUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B20549591CE57162000ADBAA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B20549311CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B20549381CE57162000ADBAA</string>
+			<key>remoteInfo</key>
+			<string>FanDueliOSChallenge</string>
+		</dict>
+		<key>B205495A1CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>B20549381CE57162000ADBAA</string>
+			<key>targetProxy</key>
+			<string>B20549591CE57162000ADBAA</string>
+		</dict>
+		<key>B205495B1CE57162000ADBAA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B205495C1CE57162000ADBAA</string>
+				<string>B205495E1CE57162000ADBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FanDueliOSChallengeUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B205495C1CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FanDueliOSChallengeUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B205495D1CE57162000ADBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B205495C1CE57162000ADBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B205495E1CE57162000ADBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B205495F1CE57162000ADBAA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B20549601CE57162000ADBAA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B20549611CE57162000ADBAA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B20549621CE57162000ADBAA</string>
+				<string>B20549631CE57162000ADBAA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B20549621CE57162000ADBAA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>455C7A6F94F5892DF45D3DC7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FanDueliOSChallenge/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>coolbnjmn.FanDueliOSChallenge</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B20549631CE57162000ADBAA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1D30D5D1B43A2B24E83A0C87</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FanDueliOSChallenge/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>coolbnjmn.FanDueliOSChallenge</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B20549641CE57162000ADBAA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B20549651CE57162000ADBAA</string>
+				<string>B20549661CE57162000ADBAA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B20549651CE57162000ADBAA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FanDueliOSChallengeTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>coolbnjmn.FanDueliOSChallengeTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FanDueliOSChallenge.app/FanDueliOSChallenge</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B20549661CE57162000ADBAA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FanDueliOSChallengeTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>coolbnjmn.FanDueliOSChallengeTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FanDueliOSChallenge.app/FanDueliOSChallenge</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B20549671CE57162000ADBAA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B20549681CE57162000ADBAA</string>
+				<string>B20549691CE57162000ADBAA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B20549681CE57162000ADBAA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>FanDueliOSChallengeUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>coolbnjmn.FanDueliOSChallengeUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>FanDueliOSChallenge</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B20549691CE57162000ADBAA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>FanDueliOSChallengeUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>coolbnjmn.FanDueliOSChallengeUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>FanDueliOSChallenge</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CDF36862E8DE3777EDB6DB04</key>
+		<dict>
+			<key>fileRef</key>
+			<string>718A575FC4587ABB04122EF6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F78BBAEFDD40D1DFD59F04BC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>718A575FC4587ABB04122EF6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA333D305DDA759799C72E06</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>455C7A6F94F5892DF45D3DC7</string>
+				<string>1D30D5D1B43A2B24E83A0C87</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>B20549311CE57162000ADBAA</string>
+</dict>
+</plist>

@@ -5,6 +5,8 @@ use_frameworks!
 
 target 'FanDueliOSChallenge' do
 
+pod 'Alamofire'
+
 end
 
 target 'FanDueliOSChallengeTests' do

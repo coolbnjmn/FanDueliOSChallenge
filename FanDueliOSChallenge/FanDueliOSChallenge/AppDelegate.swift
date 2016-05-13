@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Alamofire.request(.GET, "https://cdn.rawgit.com/liamjdouglas/bb40ee8721f1a9313c22c6ea0851a105/raw/6b6fc89d55ebe4d9b05c1469349af33651d7e7f1/Player.json", parameters: nil, encoding: .JSON, headers: nil)
+            .responseJSON {
+                response in
+                switch response.result {
+                case .Success(let data):
+                    guard let players: [[String: AnyObject]] = data["players"] as? [[String: AnyObject]] else {
+                        print("We encountered an error parsing basic json")
+                        return
+                    }
+                    for player in players {
+                        print(player)
+                    }
+                case .Failure(let error):
+                    print(error)
+                }
+        }
         return true
     }
 
