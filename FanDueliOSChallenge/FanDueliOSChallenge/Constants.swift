@@ -10,6 +10,17 @@ import UIKit
 
 class Constants: NSObject {
  
+    // Team model constants
+    struct TeamConstants {
+        struct JSONKeys {
+            static let kID = "id" // String
+            static let kCity = "city" // String
+            static let kFullName = "full_name" // String
+            static let kCode = "code" // String
+            static let kName = "name" // String
+        }
+    }
+    // Player model constants
     struct PlayerConstants {
         struct JSONKeys {
             static let kFirstName = "first_name" // String

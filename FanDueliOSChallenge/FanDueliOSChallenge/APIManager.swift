@@ -22,11 +22,22 @@ public class APIManager: NSObject {
                 switch response.result {
                 case .Success(let data):
                     guard let players: [[String: AnyObject]] = data["players"] as? [[String: AnyObject]] else {
-                        print("We encountered an error parsing basic json")
+                        print("We encountered an error parsing basic player json")
                         return
                     }
                     for player in players {
-                        print(player)
+                        let model = Player(dictionary: player)
+                        print(model.playerId)
+                    }
+                    
+                    guard let teams: [[String: AnyObject]] = data["teams"] as? [[String: AnyObject]] else {
+                        print("We encountered an error parsing basic team json")
+                        return
+                    }
+                    
+                    for team in teams {
+                        let model = Team(dictionary: team)
+                        print(model.teamId)
                     }
                 case .Failure(let error):
                     print(error)
