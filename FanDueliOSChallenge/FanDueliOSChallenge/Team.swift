@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Team: NSObject {
+public class Team: NSObject {
 
     // Required fields
     var teamId: String
@@ -20,7 +20,7 @@ class Team: NSObject {
     var name: String?
     
     
-    required init(id: String) {
+    required public init(id: String) {
         self.teamId = id
         super.init()
     }

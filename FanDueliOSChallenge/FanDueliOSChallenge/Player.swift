@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Player: NSObject {
+public class Player: NSObject {
     
     // Required fields
     var playerId: String
@@ -23,7 +23,7 @@ class Player: NSObject {
     var playerCardUrl: NSURL?
     var playerImages: [String]?
     
-    required init(id: String, firstName: String, lastName: String) {
+    required public init(id: String, firstName: String, lastName: String) {
         self.playerId = id
         self.firstName = firstName
         self.lastName = lastName
