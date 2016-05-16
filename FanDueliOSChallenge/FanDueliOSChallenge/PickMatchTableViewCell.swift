@@ -14,8 +14,8 @@ enum Pick {
     case Right
 }
 protocol PickMatchTableViewCellDelegate {
-    func rightTapped(playerId: String?)
-    func leftTapped(playerId: String?)
+    func rightTapped(viewModel: PickMatchCellViewModel?)
+    func leftTapped(viewModel: PickMatchCellViewModel?)
 }
 
 class PickMatchTableViewCell: UITableViewCell {
@@ -87,17 +87,17 @@ class PickMatchTableViewCell: UITableViewCell {
     }
     
     func leftImageTapped(sender: AnyObject) {
-        delegate?.leftTapped(leftPlayer?.playerId)
         leftImageView.userInteractionEnabled = false
         rightImageView.userInteractionEnabled = false
         revealFPPG(.Left)
+        delegate?.leftTapped(viewModel)
     }
     
     func rightImageTapped(sender: AnyObject) {
-        delegate?.rightTapped(rightPlayer?.playerId)
         leftImageView.userInteractionEnabled = false
         rightImageView.userInteractionEnabled = false
         revealFPPG(.Right)
+        delegate?.rightTapped(viewModel)
     }
     
     func revealFPPG(side: Pick) {

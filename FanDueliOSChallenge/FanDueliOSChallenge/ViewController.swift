@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     }
     var teams: [Team] = []
     var cellViewModels: [PickMatchCellViewModel] = []
+    
+    var rightGuesses: Int = 0
+    var wrongGuesses: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,6 +36,8 @@ class ViewController: UIViewController {
             }
             self.tableView.reloadData()
         }
+        
+        navigationItem.title = "Right: \(rightGuesses) -- Wrong: \(wrongGuesses)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,19 +67,31 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension ViewController: PickMatchTableViewCellDelegate {
-    func rightTapped(playerId: String?) {
-        guard let playerId = playerId else {
-            assertionFailure("Tap occured without an id!")
+    func rightTapped(viewModel: PickMatchCellViewModel?) {
+        guard let viewModel = viewModel else {
+            assertionFailure("Tap occured without a view model!")
             return
         }
-        print(playerId)
+        
+        if viewModel.didGuessCorrectly {
+            rightGuesses += 1
+        } else {
+            wrongGuesses += 1
+        }
+        navigationItem.title = "Right: \(rightGuesses) -- Wrong: \(wrongGuesses)"
     }
     
-    func leftTapped(playerId: String?) {
-        guard let playerId = playerId else {
-            assertionFailure("Tap occured without an id!")
+    func leftTapped(viewModel: PickMatchCellViewModel?) {
+        guard let viewModel = viewModel else {
+            assertionFailure("Tap occured without a view model!")
             return
         }
-        print(playerId)
+        
+        if viewModel.didGuessCorrectly {
+            rightGuesses += 1
+        } else {
+            wrongGuesses += 1
+        }
+        navigationItem.title = "Right: \(rightGuesses) -- Wrong: \(wrongGuesses)"
     }
 }
