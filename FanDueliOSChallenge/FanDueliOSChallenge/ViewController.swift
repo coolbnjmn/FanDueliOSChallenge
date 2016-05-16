@@ -12,8 +12,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var players: [Player] = []
+    var players: [Player] = [] {
+        didSet {
+            for i in 0..<(players.count/2) {
+                cellViewModels.append(PickMatchCellViewModel(rightPlayer: players[2*i], leftPlayer: players[2*i+1]))
+            }
+        }
+    }
     var teams: [Team] = []
+    var cellViewModels: [PickMatchCellViewModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,13 +46,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return players.count/2
+        return cellViewModels.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier("PickMatchTableViewCell", forIndexPath: indexPath) as? PickMatchTableViewCell {
-            cell.leftPlayer = players[2*indexPath.row]
-            cell.rightPlayer = players[2*indexPath.row + 1]
+            cell.viewModel = cellViewModels[indexPath.row]
             cell.delegate = self
             return cell
         } else {

@@ -14,6 +14,7 @@
 		B20549471CE57162000ADBAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20549451CE57162000ADBAA /* LaunchScreen.storyboard */; };
 		B20549521CE57162000ADBAA /* FanDueliOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */; };
 		B205495D1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */; };
+		B23F83C01CE94D0F0023F744 /* PickMatchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F83BF1CE94D0F0023F744 /* PickMatchCellViewModel.swift */; };
 		B252F82F1CE93AAE00686A0B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252F82E1CE93AAE00686A0B /* Team.swift */; };
 		B252F8311CE9405800686A0B /* PickMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252F8301CE9405800686A0B /* PickMatchTableViewCell.swift */; };
 		B2F492F61CE5878300564FDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F492F51CE5878300564FDF /* Constants.swift */; };
@@ -56,6 +57,7 @@
 		B20549581CE57162000ADBAA /* FanDueliOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanDueliOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B205495C1CE57162000ADBAA /* FanDueliOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanDueliOSChallengeUITests.swift; sourceTree = "<group>"; };
 		B205495E1CE57162000ADBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23F83BF1CE94D0F0023F744 /* PickMatchCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMatchCellViewModel.swift; sourceTree = "<group>"; };
 		B252F82E1CE93AAE00686A0B /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		B252F8301CE9405800686A0B /* PickMatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMatchTableViewCell.swift; sourceTree = "<group>"; };
 		B2F492F51CE5878300564FDF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				B2F492F91CE587A800564FDF /* Player.swift */,
 				B252F82E1CE93AAE00686A0B /* Team.swift */,
 				B252F8301CE9405800686A0B /* PickMatchTableViewCell.swift */,
+				B23F83BF1CE94D0F0023F744 /* PickMatchCellViewModel.swift */,
 			);
 			path = FanDueliOSChallenge;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				B205493D1CE57162000ADBAA /* AppDelegate.swift in Sources */,
 				B2F492FA1CE587A800564FDF /* Player.swift in Sources */,
 				B2F492F61CE5878300564FDF /* Constants.swift in Sources */,
+				B23F83C01CE94D0F0023F744 /* PickMatchCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

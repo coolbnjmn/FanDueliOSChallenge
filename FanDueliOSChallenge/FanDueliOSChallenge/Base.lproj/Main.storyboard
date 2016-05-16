@@ -68,15 +68,33 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left FPPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kg-r6-8bc">
+                                                    <rect key="frame" x="96" y="78" width="87" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right FPPG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3p-uI-RqK">
+                                                    <rect key="frame" x="417" y="78" width="87" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="k3p-uI-RqK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7kg-r6-8bc" secondAttribute="trailing" constant="10" id="34k-23-kBR"/>
+                                                <constraint firstItem="k3p-uI-RqK" firstAttribute="width" secondItem="7kg-r6-8bc" secondAttribute="width" id="3RK-Ws-cRR"/>
                                                 <constraint firstItem="7kj-4x-yPi" firstAttribute="leading" secondItem="pOM-S6-hyr" secondAttribute="trailing" constant="8" id="3yO-gX-dI7"/>
                                                 <constraint firstAttribute="trailing" secondItem="ovq-7Y-AiE" secondAttribute="trailing" constant="8" id="5Gs-7U-bOt"/>
+                                                <constraint firstItem="7kg-r6-8bc" firstAttribute="top" secondItem="7kj-4x-yPi" secondAttribute="bottom" constant="8" id="Exx-YA-WZX"/>
+                                                <constraint firstItem="ovq-7Y-AiE" firstAttribute="leading" secondItem="k3p-uI-RqK" secondAttribute="trailing" constant="8" id="J9h-jK-CxJ"/>
                                                 <constraint firstItem="ovq-7Y-AiE" firstAttribute="leading" secondItem="mCH-3U-cC3" secondAttribute="trailing" constant="8" id="M44-Wp-OYc"/>
                                                 <constraint firstItem="ovq-7Y-AiE" firstAttribute="top" secondItem="mCH-3U-cC3" secondAttribute="top" id="RsA-hH-Gbb"/>
                                                 <constraint firstItem="ovq-7Y-AiE" firstAttribute="leading" secondItem="SMz-rR-koX" secondAttribute="trailing" constant="8" id="UR8-af-s0x"/>
                                                 <constraint firstItem="h80-pT-uXN" firstAttribute="top" secondItem="pOM-S6-hyr" secondAttribute="top" id="UoK-D8-Tic"/>
+                                                <constraint firstItem="7kg-r6-8bc" firstAttribute="leading" secondItem="pOM-S6-hyr" secondAttribute="trailing" constant="8" id="Wtd-Wl-m4t"/>
                                                 <constraint firstItem="ovq-7Y-AiE" firstAttribute="centerY" secondItem="KSR-5u-soQ" secondAttribute="centerY" id="YX6-71-mOF"/>
+                                                <constraint firstItem="k3p-uI-RqK" firstAttribute="top" secondItem="SMz-rR-koX" secondAttribute="bottom" constant="8" id="aTk-15-xd2"/>
                                                 <constraint firstItem="7kj-4x-yPi" firstAttribute="top" secondItem="h80-pT-uXN" secondAttribute="bottom" constant="8" id="b4H-EO-htF"/>
                                                 <constraint firstItem="SMz-rR-koX" firstAttribute="top" secondItem="mCH-3U-cC3" secondAttribute="bottom" constant="8" id="bgP-iV-hTO"/>
                                                 <constraint firstItem="mCH-3U-cC3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h80-pT-uXN" secondAttribute="trailing" constant="10" id="g9f-2Z-iw3"/>
@@ -87,9 +105,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="leftFPPGLabel" destination="7kg-r6-8bc" id="X8P-ro-h5F"/>
                                             <outlet property="leftImageView" destination="pOM-S6-hyr" id="6JM-w0-6iS"/>
                                             <outlet property="leftLastNameLabel" destination="7kj-4x-yPi" id="oGm-AE-pBj"/>
                                             <outlet property="leftNameLabel" destination="h80-pT-uXN" id="BgF-4c-9le"/>
+                                            <outlet property="rightFPPGLabel" destination="k3p-uI-RqK" id="M7b-X7-et7"/>
                                             <outlet property="rightImageView" destination="ovq-7Y-AiE" id="kLp-aB-YGj"/>
                                             <outlet property="rightLastNameLabel" destination="SMz-rR-koX" id="BF5-Y2-ECc"/>
                                             <outlet property="rightNameLabel" destination="mCH-3U-cC3" id="GM6-nu-Iqr"/>
