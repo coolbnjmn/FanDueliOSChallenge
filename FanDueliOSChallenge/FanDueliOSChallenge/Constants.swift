@@ -35,6 +35,8 @@ class Constants: NSObject {
             static let kFPPG = "fppg" // Double
             static let kImages = "images" // Dictionary
             static let kPlayerCardUrl = "player_card_url" // URL
+            static let kDefaultImage = "default" // Dictionary
+            static let kImageURL = "url" // String
         }
     }
 }

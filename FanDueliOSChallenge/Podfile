@@ -6,6 +6,7 @@ use_frameworks!
 target 'FanDueliOSChallenge' do
 
 pod 'Alamofire'
+pod 'SDWebImage'
 
 end
 

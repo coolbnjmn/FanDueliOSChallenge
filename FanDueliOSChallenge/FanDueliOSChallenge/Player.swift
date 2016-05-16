@@ -21,7 +21,7 @@ public class Player: NSObject {
     var salary: Double?
     var position: String?
     var playerCardUrl: NSURL?
-    var playerImages: [String]?
+    var playerImages: [NSURL]?
     
     required public init(id: String, firstName: String, lastName: String) {
         self.playerId = id
@@ -62,8 +62,11 @@ public class Player: NSObject {
             self.playerCardUrl = playerCardUrl
         }
         
-        if let playerImages = dictionary[Constants.PlayerConstants.JSONKeys.kImages] as? [String] {
-            self.playerImages = playerImages
+        if let playerImages = dictionary[Constants.PlayerConstants.JSONKeys.kImages] as? [String: AnyObject],
+        defaultImage = playerImages[Constants.PlayerConstants.JSONKeys.kDefaultImage] as? [String: AnyObject],
+        defaultImageUrlString = defaultImage[Constants.PlayerConstants.JSONKeys.kImageURL] as? String,
+            defaultImageUrl = NSURL(string: defaultImageUrlString) {
+            self.playerImages = [defaultImageUrl]
         }
     }
 }

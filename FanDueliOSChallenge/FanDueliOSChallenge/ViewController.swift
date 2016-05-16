@@ -39,10 +39,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return players.count
+        return players.count/2
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        if let cell = tableView.dequeueReusableCellWithIdentifier("PickMatchTableViewCell", forIndexPath: indexPath) as? PickMatchTableViewCell {
+            cell.leftPlayer = players[2*indexPath.row]
+            cell.rightPlayer = players[2*indexPath.row + 1]
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
 }
