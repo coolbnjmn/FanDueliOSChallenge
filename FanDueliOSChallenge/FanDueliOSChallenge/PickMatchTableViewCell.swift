@@ -9,10 +9,15 @@
 import UIKit
 import SDWebImage
 
+enum Pick {
+    case Left
+    case Right
+}
 protocol PickMatchTableViewCellDelegate {
     func rightTapped(playerId: String?)
     func leftTapped(playerId: String?)
 }
+
 class PickMatchTableViewCell: UITableViewCell {
 
     @IBOutlet weak var leftImageView: UIImageView!
@@ -53,6 +58,20 @@ class PickMatchTableViewCell: UITableViewCell {
         didSet {
             rightPlayer = viewModel?.rightPlayer
             leftPlayer = viewModel?.leftPlayer
+            
+            if viewModel?.isRevealed ?? false {
+                if viewModel?.didGuessCorrectly ?? false {
+                    backgroundColor = UIColor.greenColor()
+                } else {
+                    backgroundColor = UIColor.redColor()
+                }
+                leftImageView.userInteractionEnabled = false
+                rightImageView.userInteractionEnabled = false
+            } else {
+                leftImageView.userInteractionEnabled = true
+                rightImageView.userInteractionEnabled = true
+                backgroundColor = UIColor.clearColor()
+            }
         }
     }
     
@@ -71,17 +90,17 @@ class PickMatchTableViewCell: UITableViewCell {
         delegate?.leftTapped(leftPlayer?.playerId)
         leftImageView.userInteractionEnabled = false
         rightImageView.userInteractionEnabled = false
-        revealFPPG()
+        revealFPPG(.Left)
     }
     
     func rightImageTapped(sender: AnyObject) {
         delegate?.rightTapped(rightPlayer?.playerId)
         leftImageView.userInteractionEnabled = false
         rightImageView.userInteractionEnabled = false
-        revealFPPG()
+        revealFPPG(.Right)
     }
     
-    func revealFPPG() {
+    func revealFPPG(side: Pick) {
         if let leftPlayer = leftPlayer {
             leftFPPGLabel.text = "\(leftPlayer.fPPG)"
         }
@@ -91,5 +110,18 @@ class PickMatchTableViewCell: UITableViewCell {
         }
         
         viewModel?.isRevealed = true
+        
+        switch side {
+        case .Left:
+            viewModel?.didGuessCorrectly = rightPlayer?.fPPG < leftPlayer?.fPPG
+        case .Right:
+            viewModel?.didGuessCorrectly = leftPlayer?.fPPG < rightPlayer?.fPPG
+        }
+        
+        if viewModel?.didGuessCorrectly ?? false {
+            backgroundColor = UIColor.greenColor()
+        } else {
+            backgroundColor = UIColor.redColor()
+        }
     }
 }

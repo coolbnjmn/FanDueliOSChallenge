@@ -12,6 +12,7 @@ public class PickMatchCellViewModel: NSObject {
     var rightPlayer: Player?
     var leftPlayer: Player?
     var isRevealed: Bool = false
+    var didGuessCorrectly: Bool = false
     
     required public init(rightPlayer: Player, leftPlayer: Player) {
         self.rightPlayer = rightPlayer
