@@ -46,9 +46,28 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCellWithIdentifier("PickMatchTableViewCell", forIndexPath: indexPath) as? PickMatchTableViewCell {
             cell.leftPlayer = players[2*indexPath.row]
             cell.rightPlayer = players[2*indexPath.row + 1]
+            cell.delegate = self
             return cell
         } else {
             return UITableViewCell()
         }
+    }
+}
+
+extension ViewController: PickMatchTableViewCellDelegate {
+    func rightTapped(playerId: String?) {
+        guard let playerId = playerId else {
+            assertionFailure("Tap occured without an id!")
+            return
+        }
+        print(playerId)
+    }
+    
+    func leftTapped(playerId: String?) {
+        guard let playerId = playerId else {
+            assertionFailure("Tap occured without an id!")
+            return
+        }
+        print(playerId)
     }
 }

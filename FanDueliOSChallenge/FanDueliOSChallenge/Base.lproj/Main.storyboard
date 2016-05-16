@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-ee-yE9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-ee-yE9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -30,31 +30,69 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ovq-7Y-AiE">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ovq-7Y-AiE">
                                                     <rect key="frame" x="512" y="20" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="ovq-7Y-AiE" secondAttribute="height" multiplier="1:1" id="BWR-dO-89k"/>
                                                         <constraint firstAttribute="width" constant="80" id="g2Z-5M-i6A"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOM-S6-hyr">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOM-S6-hyr">
                                                     <rect key="frame" x="8" y="20" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="NDc-LY-GRI"/>
                                                         <constraint firstAttribute="width" secondItem="pOM-S6-hyr" secondAttribute="height" multiplier="1:1" id="hxo-wF-8QF"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h80-pT-uXN">
+                                                    <rect key="frame" x="96" y="20" width="131" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kj-4x-yPi">
+                                                    <rect key="frame" x="96" y="49" width="131" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-3U-cC3">
+                                                    <rect key="frame" x="363" y="20" width="141" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMz-rR-koX">
+                                                    <rect key="frame" x="363" y="49" width="141" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="7kj-4x-yPi" firstAttribute="leading" secondItem="pOM-S6-hyr" secondAttribute="trailing" constant="8" id="3yO-gX-dI7"/>
                                                 <constraint firstAttribute="trailing" secondItem="ovq-7Y-AiE" secondAttribute="trailing" constant="8" id="5Gs-7U-bOt"/>
+                                                <constraint firstItem="ovq-7Y-AiE" firstAttribute="leading" secondItem="mCH-3U-cC3" secondAttribute="trailing" constant="8" id="M44-Wp-OYc"/>
+                                                <constraint firstItem="ovq-7Y-AiE" firstAttribute="top" secondItem="mCH-3U-cC3" secondAttribute="top" id="RsA-hH-Gbb"/>
+                                                <constraint firstItem="ovq-7Y-AiE" firstAttribute="leading" secondItem="SMz-rR-koX" secondAttribute="trailing" constant="8" id="UR8-af-s0x"/>
+                                                <constraint firstItem="h80-pT-uXN" firstAttribute="top" secondItem="pOM-S6-hyr" secondAttribute="top" id="UoK-D8-Tic"/>
                                                 <constraint firstItem="ovq-7Y-AiE" firstAttribute="centerY" secondItem="KSR-5u-soQ" secondAttribute="centerY" id="YX6-71-mOF"/>
+                                                <constraint firstItem="7kj-4x-yPi" firstAttribute="top" secondItem="h80-pT-uXN" secondAttribute="bottom" constant="8" id="b4H-EO-htF"/>
+                                                <constraint firstItem="SMz-rR-koX" firstAttribute="top" secondItem="mCH-3U-cC3" secondAttribute="bottom" constant="8" id="bgP-iV-hTO"/>
+                                                <constraint firstItem="mCH-3U-cC3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h80-pT-uXN" secondAttribute="trailing" constant="10" id="g9f-2Z-iw3"/>
                                                 <constraint firstItem="pOM-S6-hyr" firstAttribute="centerY" secondItem="KSR-5u-soQ" secondAttribute="centerY" id="lrg-2u-1LJ"/>
+                                                <constraint firstItem="h80-pT-uXN" firstAttribute="leading" secondItem="pOM-S6-hyr" secondAttribute="trailing" constant="8" id="rTg-YC-Zmw"/>
                                                 <constraint firstItem="pOM-S6-hyr" firstAttribute="leading" secondItem="KSR-5u-soQ" secondAttribute="leading" constant="8" id="xR6-oR-xJS"/>
+                                                <constraint firstItem="SMz-rR-koX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7kj-4x-yPi" secondAttribute="trailing" constant="10" id="zGJ-pd-RAh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="leftImageView" destination="pOM-S6-hyr" id="6JM-w0-6iS"/>
+                                            <outlet property="leftLastNameLabel" destination="7kj-4x-yPi" id="oGm-AE-pBj"/>
+                                            <outlet property="leftNameLabel" destination="h80-pT-uXN" id="BgF-4c-9le"/>
                                             <outlet property="rightImageView" destination="ovq-7Y-AiE" id="kLp-aB-YGj"/>
+                                            <outlet property="rightLastNameLabel" destination="SMz-rR-koX" id="BF5-Y2-ECc"/>
+                                            <outlet property="rightNameLabel" destination="mCH-3U-cC3" id="GM6-nu-Iqr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
