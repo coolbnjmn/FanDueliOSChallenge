@@ -44,6 +44,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func resetButtonTapped(sender: AnyObject) {
+        players = players.shuffle()
+        cellViewModels.removeAll()
+        rightGuesses = 0
+        wrongGuesses = 0
+        navigationItem.title = "Right: \(rightGuesses) -- Wrong: \(wrongGuesses)"
+        for i in 0..<(players.count/2) {
+            cellViewModels.append(PickMatchCellViewModel(rightPlayer: players[2*i], leftPlayer: players[2*i+1]))
+        }
+        tableView.reloadData()
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -79,6 +91,8 @@ extension ViewController: PickMatchTableViewCellDelegate {
             wrongGuesses += 1
         }
         navigationItem.title = "Right: \(rightGuesses) -- Wrong: \(wrongGuesses)"
+        
+        checkWin()
     }
     
     func leftTapped(viewModel: PickMatchCellViewModel?) {
@@ -93,5 +107,43 @@ extension ViewController: PickMatchTableViewCellDelegate {
             wrongGuesses += 1
         }
         navigationItem.title = "Right: \(rightGuesses) -- Wrong: \(wrongGuesses)"
+        
+        checkWin()
+    }
+    
+    func checkWin() {
+        if rightGuesses >= 10 {
+            let alertController = UIAlertController(title: "You won!", message: "Time to play again?", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .Default, handler: {
+                action in
+                
+                self.resetButtonTapped(self)
+            }))
+            
+            presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
+}
+
+extension CollectionType {
+    /// Return a copy of `self` with its elements shuffled
+    func shuffle() -> [Generator.Element] {
+        var list = Array(self)
+        list.shuffleInPlace()
+        return list
+    }
+}
+
+extension MutableCollectionType where Index == Int {
+    /// Shuffle the elements of `self` in-place.
+    mutating func shuffleInPlace() {
+        // empty and single-element collections don't shuffle
+        if count < 2 { return }
+        
+        for i in 0..<count - 1 {
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            guard i != j else { continue }
+            swap(&self[i], &self[j])
+        }
     }
 }
