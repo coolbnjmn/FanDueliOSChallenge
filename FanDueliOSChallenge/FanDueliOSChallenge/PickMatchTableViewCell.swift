@@ -84,6 +84,9 @@ class PickMatchTableViewCell: UITableViewCell {
         
         leftImageView.addGestureRecognizer(leftImageTapGestureRecognizer)
         rightImageView.addGestureRecognizer(rightImageTapGestureRecognizer)
+        
+        leftImageView.isAccessibilityElement = true
+        rightImageView.isAccessibilityElement = true
     }
     
     func leftImageTapped(sender: AnyObject) {

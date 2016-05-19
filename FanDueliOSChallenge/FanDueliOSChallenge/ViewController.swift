@@ -125,6 +125,7 @@ extension ViewController: PickMatchTableViewCellDelegate {
     }
 }
 
+// MARK:-- SHUFFLE METHODS TO SHUFFLE PLAYER LIST
 extension CollectionType {
     /// Return a copy of `self` with its elements shuffled
     func shuffle() -> [Generator.Element] {

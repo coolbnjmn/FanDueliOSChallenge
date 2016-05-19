@@ -17,6 +17,8 @@
 		B23F83C01CE94D0F0023F744 /* PickMatchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F83BF1CE94D0F0023F744 /* PickMatchCellViewModel.swift */; };
 		B252F82F1CE93AAE00686A0B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252F82E1CE93AAE00686A0B /* Team.swift */; };
 		B252F8311CE9405800686A0B /* PickMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252F8301CE9405800686A0B /* PickMatchTableViewCell.swift */; };
+		B26A80C91CED6FC400BB09AE /* playerTest.json in Resources */ = {isa = PBXBuildFile; fileRef = B26A80C81CED6FC400BB09AE /* playerTest.json */; };
+		B2CA68871CED71B4000D9AA4 /* teamTest.json in Resources */ = {isa = PBXBuildFile; fileRef = B2CA68861CED71B4000D9AA4 /* teamTest.json */; };
 		B2F492F61CE5878300564FDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F492F51CE5878300564FDF /* Constants.swift */; };
 		B2F492F81CE5879900564FDF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F492F71CE5879900564FDF /* APIManager.swift */; };
 		B2F492FA1CE587A800564FDF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F492F91CE587A800564FDF /* Player.swift */; };
@@ -60,6 +62,8 @@
 		B23F83BF1CE94D0F0023F744 /* PickMatchCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMatchCellViewModel.swift; sourceTree = "<group>"; };
 		B252F82E1CE93AAE00686A0B /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		B252F8301CE9405800686A0B /* PickMatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMatchTableViewCell.swift; sourceTree = "<group>"; };
+		B26A80C81CED6FC400BB09AE /* playerTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playerTest.json; sourceTree = "<group>"; };
+		B2CA68861CED71B4000D9AA4 /* teamTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamTest.json; sourceTree = "<group>"; };
 		B2F492F51CE5878300564FDF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2F492F71CE5879900564FDF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		B2F492F91CE587A800564FDF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			children = (
 				B20549511CE57162000ADBAA /* FanDueliOSChallengeTests.swift */,
 				B20549531CE57162000ADBAA /* Info.plist */,
+				B26A80C81CED6FC400BB09AE /* playerTest.json */,
+				B2CA68861CED71B4000D9AA4 /* teamTest.json */,
 			);
 			path = FanDueliOSChallengeTests;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CA68871CED71B4000D9AA4 /* teamTest.json in Resources */,
+				B26A80C91CED6FC400BB09AE /* playerTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

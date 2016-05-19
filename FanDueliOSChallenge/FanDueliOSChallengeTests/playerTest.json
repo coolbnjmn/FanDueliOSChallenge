@@ -1,0 +1,33 @@
+{
+    "first_name": "Draymond",
+    "fixture": {
+        "_members": ["112160"],
+        "_ref": "fixtures.id"
+    },
+    "fppg": 38.9604938271605,
+    "id": "15475-15860",
+    "images": {
+        "default": {
+            "height": 200,
+            "url": "https://d17odppiik753x.cloudfront.net/playerimages/nba/15860.png",
+            "width": 200
+        }
+    },
+    "injured": false,
+    "injury_details": null,
+    "injury_status": null,
+    "last_name": "Green",
+    "news": {
+        "latest": "2016-05-02T01:24:54Z"
+    },
+    "played": 81,
+    "player_card_url": "https://www.fanduel.com/e/Player/15860/Stats/15475",
+    "position": "PF",
+    "removed": false,
+    "salary": 9300,
+    "starting_order": null,
+    "team": {
+        "_members": ["687"],
+        "_ref": "teams.id"
+    }
+}

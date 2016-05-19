@@ -28,9 +28,27 @@ class FanDueliOSChallengeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    /**
+     This test is simple -- keep tapping on the left hand side picture until you win. Reset if necessary, but always press left and check for win state.
+     To check for win, we look for the alert that comes up on a win. 
+     */
+    func testFullGameFlow() {
+        let tablesQuery = XCUIApplication().tables
+        var cellIndex: UInt = 0
+        
+        while( XCUIApplication().alerts.count == 0 ) {
+            let cell = tablesQuery.cells.elementBoundByIndex(cellIndex)
+            cell.childrenMatchingType(.Image).elementBoundByIndex(0).tap()
+            cellIndex += 1
+            
+            if cellIndex > tablesQuery.cells.count {
+               XCUIApplication().navigationBars.buttons.elementBoundByIndex(0).tap()
+                cellIndex = 0
+            }
+        }
+        
+        XCTAssert(XCUIApplication().alerts.elementBoundByIndex(0).label == "You won!", "Check title of alert")
+        
     }
     
 }
